@@ -28,7 +28,7 @@
 
 <h2>Screenshot 3 (mobile)</h2>
 
-<div align="center">
-    <img src="./README-images./screenshot-3.png" />
-</div>
+<p align="center">
+    <img src="./README-images/screenshot-3.png" />
+</p>
 
