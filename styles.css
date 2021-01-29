@@ -1,0 +1,289 @@
+:root {
+    --dark-blue:#363f5f;
+    --green: #49aa26;  
+    --light-green: #3dd705;
+    --red: #e92929;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*Função min() aceita dois parâmetros e sempre deixa o menor valor*/
+.container {
+    width: min(90vw, 800px); /*90% da viewport ou 800px*/
+    /*quando 90% da largura total for maior que 800px, então fica 800px*/
+    margin: auto;
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: normal;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--light-green);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: var(--green);
+    padding: 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--light-green);
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.button.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2d4a22;
+    padding: 2rem 0 12rem;
+}
+
+header .icons-midia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1.5rem;
+    padding-right: 0.8rem;
+    color: #fff;
+    opacity: 0.6;
+}
+
+header .icons-midia a {
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+#balance {
+    margin-top: -11rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total {
+    background: #49aa26;
+    color: #fff;
+}
+
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+}
+
+#transaction {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+table thead tr th:first-child, /*primeiro th dentro de tr dentro de thead dentro de table*/
+table tbody tr td:first-child { /*primeiro td dentro de tr dentro de tbody dentro de table*/
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem 0 0.25rem;
+}
+
+table th {
+    background: #fff;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+    color: #969cb3;
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table td {
+    background: #fff;
+    padding: 1rem 2rem;
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.income {
+    color: #12a454;
+}
+
+td.expense {
+    color: #e92929;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Estilização do modal*/
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background: #f0f2f5;
+    padding: 2.4rem;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Estilização do formulário do modal*/
+#form {
+    max-width: 500px;   
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+#form form input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 40%;
+}
+
+/*Responsive*/
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%; /*14px*/
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*-> repeat(3, 1fr)*/
+        gap: 2rem; /*Espaçamento entre as caixas do grid*/
+    }
+}
+
+@media (max-width: 799px) {
+    header .icons-midia span {
+        display: none;
+    }
+}
