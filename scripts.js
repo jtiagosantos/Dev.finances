@@ -23,31 +23,7 @@ const Storage =  {
 
 const Transaction = {
     all: Storage.get(),
-/*
-    [
-        {
-            description: 'Luz',
-            amount: -50000,
-            date: '23/01/2021',
-        }, 
-        {
-            description: 'website',
-            amount: 500000,
-            date: '23/01/2021',
-        }, 
-        {
-            description: 'Internet',
-            amount: -20000,
-            date: '23/01/2021',
-        },
-        {
-            description: 'App',
-            amount: 200000,
-            date: '23/01/2021',
-        }
-    ],
 
-*/
     add(transaction) {
         Transaction.all.push(transaction);
 
@@ -211,7 +187,7 @@ const Form = {
             Modal.close();  
 
         }catch (error){
-            alert(error.message);
+            swal(error.message, "", "error");
         }
     }
 }
