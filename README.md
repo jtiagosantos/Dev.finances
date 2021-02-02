@@ -26,13 +26,8 @@
     <img src="./README-images/screenshot-2.png" />
 </div>
 
-
 <h2>Screenshot 3</h2>
 
-<div align="center">
-    <img src="./README-images./screenshot-3.png" />
-</div>
-=======
 <p align="center">
     <img src="./README-images/screenshot-3.png" />
 </p>
