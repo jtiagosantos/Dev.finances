@@ -8,6 +8,8 @@
 
 - <h6>Data storage in LocalStorage</h6>
 
+- <h6>Sweetalert lib</h6>
+
 
 
 <h2>Screenshot 1</h2>
