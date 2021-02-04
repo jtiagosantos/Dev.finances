@@ -1,3 +1,7 @@
+<h2>About the project</h2>
+
+Dev.finances is a financial control application, where you can register and delete transactions and view the incoming and outgoing balance.
+
 ## Properties used in the application
 
 - ###### Flexbox
@@ -10,15 +14,15 @@
 
 - <h6>Sweetalert lib</h6>
 
+  
 
+![gif](./README-images/toggle-theme.gif)
 
 <h2>Screenshot 1</h2>
 
 <div align="center">
     <img src="./README-images/screenshot-1.png" />
 </div>
-
-
 
 <h2>Screenshot 2</h2>
 
@@ -27,12 +31,7 @@
 </div>
 
 
-<h2>Screenshot 3</h2>
 
-<div align="center">
-    <img src="./README-images./screenshot-3.png" />
-</div>
-=======
-<p align="center">
-    <img src="./README-images/screenshot-3.png" />
-</p>
+
+
+

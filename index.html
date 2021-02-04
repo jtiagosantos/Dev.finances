@@ -5,29 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dev.finance$</title>
+
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-    <script defer src="./scripts.js"></script>
+    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/light-dark-mode.js"></script>
     <script defer src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="dist/sweetalert-dev.js"></script>
     <link rel="stylesheet" href="dist/sweetalert.css">
     <script defer src="https://kit.fontawesome.com/50cac3061b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
     <header>
-        <div class="icons-midia">
-            <span>Me siga nas redes socias!</span>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-tiago-santos-de-lima-aaa4361a4/" target="_black" rel="external">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/jtiagosantos" target="_black" rel="external">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/jtiago_santos/" target="_black" rel="external">
-                <i class="fab fa-instagram"></i>
-            </a>
+        <div class="top-bar">
+            <div class="toggle-wrapper">
+                <button class="button"></button>
+                <span class="span"></span>
+                <span class="switch"></span>
+            </div>
+            <div class="icons-midia">
+                <span>Me siga nas redes socias!</span>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-tiago-santos-de-lima-aaa4361a4/" target="_black" rel="external">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/jtiagosantos" target="_black" rel="external">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/jtiago_santos/" target="_black" rel="external">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
         <img id="logo" src="./assets/logo.svg" alt="Logo Dev Finance">
     </header>
