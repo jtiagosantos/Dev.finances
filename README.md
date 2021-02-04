@@ -29,17 +29,3 @@ Dev.finances is a financial control application, where you can register and dele
 <div align="center">
     <img src="./README-images/screenshot-2.png" />
 </div>
-
-<<<<<<< HEAD
-
-
-
-
-
-=======
-<h2>Screenshot 3</h2>
-
-<p align="center">
-    <img src="./README-images/screenshot-3.png" />
-</p>
->>>>>>> 41c5743d81598fd1e50ad95cb3adddf770ab5444
