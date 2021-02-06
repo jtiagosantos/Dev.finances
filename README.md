@@ -16,8 +16,6 @@ Dev.finances is a financial control application, where you can register and dele
 
   
 
-![gif](./README-images/toggle-theme.gif)
-
 <h2>Screenshot 1</h2>
 
 <div align="center">

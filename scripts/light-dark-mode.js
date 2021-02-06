@@ -1,10 +1,11 @@
-const changeColors = (span, button, header, cardUI, cardtotal, modal) => {
+const changeColors = (span, button, header, cardtotal, modal, formh2, small) => {
     document.querySelector('.span').style.backgroundColor = span;
     document.querySelector('.button').style.backgroundColor = button;
     document.querySelector('header').style.backgroundColor = header;
-    document.querySelectorAll('.card').forEach(card => card.style.backgroundColor = cardUI);
     document.querySelector('.card.total').style.backgroundColor = cardtotal;
     document.querySelector('.modal').style.backgroundColor = modal;
+    document.querySelector('.modal').querySelector('h2').style.color = formh2;
+    document.querySelector('.modal').querySelector('small').style.color = small;
 }
 
 const addClasses = () => {
@@ -28,10 +29,10 @@ buttonElement.addEventListener('click', () => {
     switchElement.classList.toggle('dark');
 
     if(switchElement.classList.value === 'span dark'){
-        changeColors("#141414", "#fff", "#141414", "#fff", "#757277", "#141414");
+        changeColors("#141414", "#fff", "#141414", "#757277", "#141414", "#FFFFFF", "#FFFFFF");
         addClasses();
     }else {
-        changeColors("#fff", "#141414", "#7e0cc0", "rgba(248, 128, 218, 0.486)", "#410474", "#410474");
+        changeColors("#fff", "#141414", "#2D4A22", "#49AA26", "#F0F2f5", "#808080", "#000000");
         removeClasses();
     }
 

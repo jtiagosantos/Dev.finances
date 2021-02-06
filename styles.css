@@ -1,8 +1,9 @@
 :root {
-    --dark-blue:#363f5f;
-    --purple: #e644a7;  
-    --light-purple: #ff0697;
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
     --red: #e92929;
+
 }
 
 * {
@@ -13,7 +14,7 @@
 
 html {font-size: 93.75%;}
 
-.body {background: linear-gradient(270deg, rgb(136, 21, 136), rgb(54, 54, 226));font-family: 'Poppins', sans-serif;}
+.body {background: #f0f2f5;font-family: 'Poppins', sans-serif;}
 
 .body.dark-mode {background: #252525;font-family: 'Poppins', sans-serif;}
 
@@ -43,9 +44,9 @@ h2 {
     font-weight: normal;
 }
 
-a {color: var(--purple);text-decoration: none;}
+a {color: var(--green);text-decoration: none;}
 
-a:hover {color: var(--light-purple);
+a:hover {color: var(--light-green);
 }
 
 a.dark-mode {color: lightgray;
@@ -87,7 +88,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #7e0cc0;
+    background: #2D4A22;
     padding: 2rem 0 12rem;
 }
 
@@ -155,7 +156,7 @@ header .icons-midia a {margin-left: 0.5rem;color: #fff;}
 #balance h2 {color: #fff;margin-top: 0;}
 
 .card {
-    background: rgba(248, 128, 218, 0.486);
+    background: #ffffff;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
@@ -176,7 +177,7 @@ header .icons-midia a {margin-left: 0.5rem;color: #fff;}
     margin-top: 1rem;
 }
 
-.card.total {background: #410474;color: #fff;}
+.card.total {background: var(--green);color: #fff;}
 
 #data-table {
     width: 100%;
@@ -209,7 +210,7 @@ table tbody tr {opacity: 0.7;}
 
 table tbody tr:hover {opacity: 1;}
 
-table td {background: #fff;padding: 1rem 2rem;}
+table td {background: #ffffff;padding: 1rem 2rem;}
 
 td.description {color: var(--dark-blue);}
 
@@ -233,10 +234,10 @@ html, body {height: 100%;}
     visibility: hidden;
 }
 
-.modal-overlay .help {color: #fff;}
+.modal-overlay .help {color: rgb(20, 19, 19);}
 
 .modal {
-    background: #410474;
+    background: #F0F2f5;
     padding: 2.4rem;
     border-radius: 0.25rem;
 }
@@ -244,9 +245,9 @@ html, body {height: 100%;}
 .modal-overlay.active {opacity: 1;visibility: visible;}
 
 /*Estilização do formulário do modal*/
-#form {max-width: 500px;   }
+#form {max-width: 500px;}
 
-#form h2 {margin-top: 0;}
+#form h2 {margin-top: 0; color: #808080;}
 
 #form form input {
     border: none;
@@ -257,7 +258,7 @@ html, body {height: 100%;}
 
 .input-group {margin-top: 0.8rem;}
 
-.input-group small {opacity: 0.4;}
+.input-group small {opacity: 0.8; color: black;}
 
 .input-group.actions {
     display: flex;
@@ -266,28 +267,20 @@ html, body {height: 100%;}
 }
 
 .input-group.actions .button {
-    background: var(--purple);
+    background: rgb(209, 20, 20);
     border: none;
     color: #fff;
     opacity: 1;
 }
 
-.input-group.actions .button:hover {background: var(--light-purple);}
-
-.input-group.actions .button.dark-mode {background: rgb(245, 40, 40);}
-
-.input-group.actions .button.dark-mode:hover {background: red;}
+.input-group.actions .button:hover {background: red;}
 
 .input-group.actions .button,
 .input-group.actions button {width: 40%;}
 
-.input-group.actions button {background: #a102fd;outline: none;}
+.input-group.actions button {background: var(--green);outline: none;}
 
-.input-group.actions button:hover {background: #7e0cc0;}
-
-.input-group.actions button.dark-mode {background: green;}
-
-.input-group.actions button.dark-mode:hover {background: rgb(5, 170, 5);}
+.input-group.actions button:hover {background: var(--light-green);}
 
 /*Responsive*/
 @media (min-width: 800px) {
